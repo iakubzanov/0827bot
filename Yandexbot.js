@@ -5,7 +5,7 @@
 // @description  try to take over the world!
 // @author       You
 // @match        https://yandex.ru/*
-// @match        https://https://xn----7sbab5aqcbiddtdj1e1g.xn--p1ai/*
+// @match        https://xn----7sbab5aqcbiddtdj1e1g.xn--p1ai/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
@@ -44,6 +44,7 @@ if(btn != undefined){ // Проверяем, что мы на главной с�
     let randomIndex = getIntRandom(0, links.length);
     let link = links[randomIndex];
     if(link.href.indexOf(location.hostname) != -1){ // Если переход внутри сайта
+        link.target = "_self";
         setTimeout(function(){
             links[randomIndex].click();
         }, 2000);
