@@ -25,6 +25,7 @@ if(btn != undefined){ // Проверяем, что мы на главной с�
     for(let i=0; i<links.length; i++){ // Перебираем ссылки
         let link = links[i];
         if(link.href.indexOf("xn----7sbab5aqcbiddtdj1e1g.xn--p1ai" ) != -1){ // Ищем ссылку с нужным сайтом
+           link.target = "_self";
             setTimeout(function(){
                 link.click(); // Кликаем по ссылке с нужным сайтом
             }, 3000);
