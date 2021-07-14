@@ -49,16 +49,10 @@ if(btn != undefined){ // Проверяем, что мы на главной с�
         }
     }
     if(goNext){ // Проверяем, можно ли идти далее по страницам поисковика
-         let currentPage = document.querySelector('.YyVfkd').innerText;
-         if(currentPage<10){
-
-           let btnY = document.getElementsByClassName("pager__item pager__item_kind_next")[0]; // Находим кнопку "Следующая"
-           setTimeout(function(){
-             btnY.click(); // Кликаем по кнопке следующая
-           }, 2000);
-         }else{
-            location.href = "https://yandex.ru/";
-         }
+        let next = document.getElementsByClassName("pager__item pager__item_kind_next")[0]; // Находим кнопку "Следующая"
+        setTimeout(function(){
+            next.click(); // Кликаем по кнопке следующая
+        }, 2000);
     }
  }else{ // Любой другой сайт
       setInterval(function(){
