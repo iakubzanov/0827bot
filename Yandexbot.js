@@ -14,7 +14,7 @@
 let yandexInput = document.getElementsByName("text")[0];
 let btn = document.getElementsByClassName("button")[1];
 let sites = {
-    "xn----7sbab5aqcbiddtdj1e1g.xn--p1ai": ["Как звучит гобой","Флейта","Кларнет","Фагот","Валторна","Саксофон"],
+    "xn----7sbab5aqcbiddtdj1e1g.xn--p1ai": ["Как звучит гобой","Кларнет","Фагот","Валторна","Саксофон"],
      "crushdrummers.ru": ["Барабанное шоу", "Шоу барабанщиков Crush", "Заказать барабанное шоу"]
 }
 let site = Object.keys(sites)[getIntRandom(0, Object.keys(sites).length)]; // Возвращаем случайный сайт
