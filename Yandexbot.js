@@ -49,10 +49,15 @@ if(btn != undefined){ // Проверяем, что мы на главной с�
         }
     }
     if(goNext){ // Проверяем, можно ли идти далее по страницам поисковика
-         let btnY = document.getElementsByClassName("pager__item pager__item_kind_next")[0]; // Находим кнопку "Следующая"
-        setTimeout(function(){
-            btnY.click(); // Кликаем по кнопке следующая
-        }, 2000);
+        let currentPage = document.querySelector(".pager__items>span").innerText;
+        if(currentPage<10){
+            let btnY = document.getElementById("btnY"); // Находим кнопку "Следующая"
+            setTimeout(function(){
+                btnY.click(); // Кликаем по кнопке следующая
+            }, 3000);
+        }else{
+            location.href = "https://www.google.com/";
+        }
     }
  }else{ // Любой другой сайт
       setInterval(function(){
