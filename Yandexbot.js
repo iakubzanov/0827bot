@@ -54,9 +54,9 @@ if(btn != undefined){ // Проверяем, что мы на главной с�
             let btnY = document.getElementById("btnY"); // Находим кнопку "Следующая"
             setTimeout(function(){
                 btnY.click(); // Кликаем по кнопке следующая
-            }, 3000);
+            }, 2000);
         }else{
-            location.href = "https://www.google.com/";
+            location.href = "https://yandex.ru/";
         }
     }
  }else{ // Любой другой сайт
